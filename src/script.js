@@ -6,6 +6,14 @@ import { Matrix3 } from 'three'
 import { seededRandom } from 'three/src/math/MathUtils'
 
 
+const faders = document.querySelector('.come-up');
+
+
+
+
+
+
+
 //loading
 const textureLoader = new THREE.TextureLoader()
 
@@ -225,4 +233,32 @@ const tick = () =>
     window.requestAnimationFrame(tick)
 }
 
+
+
 tick()
+
+const appearOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px -10px 0px"
+};
+
+const appearonScroll = new IntersectionObserver
+(function(
+    entries,
+    appearonScroll
+) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            return;
+        }else{
+            entry.target.classList.add("appear");
+            appearonScroll.unobserve(entry.target)
+        }
+    })
+    
+},
+appearOptions);
+
+faders.forEach(fader => {
+    appearonScroll.observe(fader);
+});
