@@ -1,3 +1,16 @@
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100vw;
+}
+
+
+
 
 
 *
@@ -39,13 +52,23 @@ h1{
 
 .section{height: 100vh;}
 
+.colums{
+    display: flex;
+}
 .come-up{
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 1150ms ease-in;
 }
 
-.come-up .appear{
+.come-up.appear{
     opacity: 1;
 }
 
+.slide-up{
+    transform: translateY(50%);
+    transition: transform 400ms ease-in;
+}
+.slide-up.appear{
+    transform: translateY(0);
+}
 

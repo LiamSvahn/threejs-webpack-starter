@@ -6,11 +6,9 @@ import { Matrix3 } from 'three'
 import { seededRandom } from 'three/src/math/MathUtils'
 
 
-const faders = document.querySelector('.come-up');
+const faders = document.querySelectorAll(".come-up");
 
-
-
-
+const slideup = document.querySelectorAll(".slide-up");
 
 
 
@@ -232,33 +230,36 @@ const tick = () =>
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
 }
-
-
-
 tick()
 
+
+
 const appearOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px -10px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px -150px 0px"
 };
 
-const appearonScroll = new IntersectionObserver
+const appearOnScroll = new IntersectionObserver
 (function(
     entries,
-    appearonScroll
+    appearOnScroll
 ) {
     entries.forEach(entry => {
         if(!entry.isIntersecting){
             return;
         }else{
             entry.target.classList.add("appear");
-            appearonScroll.unobserve(entry.target)
+            appearOnScroll.unobserve(entry.target)
         }
-    })
+    });
     
 },
 appearOptions);
 
 faders.forEach(fader => {
-    appearonScroll.observe(fader);
+    appearOnScroll.observe(fader);
+});
+
+slideup.forEach(slide => {
+    appearOnScroll.observe(slide);
 });
