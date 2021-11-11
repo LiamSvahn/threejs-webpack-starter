@@ -24,7 +24,7 @@ body
 {
     height: 100vh;
     font-family: 'Poppins';
-    background-color: rgb(29, 29, 29);
+    background-color: #292929
 }
 body{
     overflow-x: hidden;
@@ -37,6 +37,39 @@ body{
     outline: none;
     mix-blend-mode: exclusion;
 }
+
+/* Nav bar */
+
+.nav-bar{
+ height: 980px;
+ width: 100px;
+ background-color: #1E1E1E;
+ position: fixed;
+ z-index: 999;
+}
+.nav-bar ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-bar ul li{
+    margin-bottom: 20px;
+}
+ul{
+    width: 100%
+}
+li{
+    border-bottom: 1px solid rgb(59, 59, 59);
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+
 
 .container{
     height: 100vh;
