@@ -70,13 +70,31 @@ li{
     padding-bottom: 5px;
 }
 a{
+    font-family: 'Poppins';
     color: white;
     text-decoration: none;
     margin-left: 10px;
 }
 
-
-
+.web-padding{
+    margin-left: 140px;
+    margin-right: 140px; 
+}
+.grid-container {
+    display: grid;
+    
+    grid-column-gap: 16px;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 750px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
 
 .container{
     height: 100vh;
@@ -89,7 +107,10 @@ h1{
     color: white;
     text-transform: uppercase;
 }
-
+P{
+    font-family: 'Poppins';
+    color: white;
+}
 .section{height: 100vh;}
 
 .colums{
