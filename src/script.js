@@ -15,7 +15,7 @@ const slideup = document.querySelectorAll(".slide-up");
 //loading
 const textureLoader = new THREE.TextureLoader()
 
-const normalTexture = textureLoader.load('/Texture/nomalmapGolf.png')
+const normalTexture = textureLoader.load('/static/Texture/nomalmapGolf.png')
 
 // Debug
 const gui = new dat.GUI()
