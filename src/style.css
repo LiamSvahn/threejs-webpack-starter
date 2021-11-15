@@ -175,8 +175,13 @@ P{
 }
 
 /*-------------------------------work----------------------*/
+
 .work-colum1{
-    margin:1em 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+work-colum-placment{
+    top: 22%;
 }
 .my-work{
     float: left;
