@@ -110,7 +110,12 @@ a{
 
 .web-padding{
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    position: relative;
 }
 .web-padding-content{
     margin-left: 5%;
@@ -121,7 +126,18 @@ a{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 35px;
-  }
+}
+.container-flex{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 3rem;
+}
+.container-child{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    margin-left: 3rem;
+}
   
   .grid-item {
     color: white;
@@ -133,16 +149,6 @@ a{
       position: relative;
   }
 
-  .container-flex{
-    position: absolute;
-    bottom: 10%;
-    margin-left: 5%;
-}
-.container{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
 .text-box1{
     width: 55%;
 }
@@ -167,6 +173,22 @@ P{
 .colums{
     display: flex;
 }
+
+/*-------------------------------work----------------------*/
+.work-colum1{
+    margin:1em 0;
+}
+.my-work{
+    float: left;
+}
+.my-work-right{
+    width: 60%;
+    background-color: blue;
+}
+.my-work-left{
+    width: 40%;
+    background-color: crimson;
+}
 .come-up{
     opacity: 0;
     transition: opacity 1150ms ease-in;
@@ -183,4 +205,17 @@ P{
 .slide-up.appear{
     transform: translateY(0);
 }
-
+.slide-in-left{
+    transform: translateX(50%);
+    transition: transform 400ms ease-in;
+}
+.slide-in-left.appear{
+    transform: translateX(0);
+}
+.slide-in-right{
+    transform: translateX(-50%);
+    transition: transform 400ms ease-in;
+}
+.slide-in-right.appear{
+    transform: translateX(0);
+}

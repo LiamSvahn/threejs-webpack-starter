@@ -10,6 +10,10 @@ const faders = document.querySelectorAll(".come-up");
 
 const slideup = document.querySelectorAll(".slide-up");
 
+const slideninleft = document.querySelectorAll(".slide-in-left");
+
+const slideinright = document.querySelectorAll(".slide-in-right");
+
 
 
 //loading
@@ -262,4 +266,12 @@ faders.forEach(fader => {
 
 slideup.forEach(slide => {
     appearOnScroll.observe(slide);
+});
+
+slideninleft.forEach(slideLeft => {
+    appearOnScroll.observe(slideLeft);
+});
+
+slideinright.forEach(slideRight => {
+    appearOnScroll.observe(slideRight);
 });
