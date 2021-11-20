@@ -14,6 +14,8 @@ const slideninleft = document.querySelectorAll(".slide-in-left");
 
 const slideinright = document.querySelectorAll(".slide-in-right");
 
+const loadinanimation = document.querySelectorAll(".load-in-animation");
+
 
 
 //loading
@@ -274,4 +276,8 @@ slideninleft.forEach(slideLeft => {
 
 slideinright.forEach(slideRight => {
     appearOnScroll.observe(slideRight);
+});
+
+loadinanimation.forEach(loadInAnimation => {
+    appearOnScroll.observe(loadInAnimation);
 });

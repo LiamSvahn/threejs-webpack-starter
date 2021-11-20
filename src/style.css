@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 ::-webkit-scrollbar{
     width: 1em;
 }
@@ -55,7 +56,7 @@ body
 {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: #292929
+    background-color: #171717
 }
 body{
     overflow-x: hidden;
@@ -75,12 +76,12 @@ body{
     z-index: 1000;
     background-color: black;
     height: 100px;
-    width: 100px;
+    width: 80px;
 }
 .nav-bar{
  height: 100vh;
- width: 100px;
- background-color: #1E1E1E;
+ width: 80px;
+ background-color: #212121;
  position: fixed;
  z-index: 999;
 }
@@ -99,13 +100,17 @@ li{
     border-bottom: 1px solid rgb(59, 59, 59);
     text-decoration: none;
     padding-bottom: 5px;
+    margin-left: 10px;
 }
 a{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #14279B;
+    font-size: 0.9rem;
     text-decoration: none;
-    margin-left: 10px;
     text-transform: uppercase;
+}
+.work-link{
+
 }
 
 .web-padding{
@@ -114,8 +119,12 @@ a{
 }
 .container{
     height: 100vh;
-    display: grid;
+    display: block;
     position: relative;
+}
+.container-heading{
+    height: 10vh;
+    display: grid;
 }
 .web-padding-content{
     margin-left: 5%;
@@ -124,7 +133,7 @@ a{
 }
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 35px;
 }
 .container-flex{
@@ -133,15 +142,13 @@ a{
     margin-left: 3rem;
 }
 .container-child{
-    position: absolute;
-    top: 20%;
-    left: 0%;
+    padding-top: 200px;
     margin-left: 3rem;
 }
   
   .grid-item {
     color: white;
-    height: 900px;
+    height: 700px;
     padding: 60px;
     font-size: 20px;
   }
@@ -150,23 +157,45 @@ a{
   }
 
 .text-box1{
+    padding-top: 100px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     width: 55%;
 }
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 2.3rem;
+    color: #DA0037;
     text-transform: uppercase;
 }
-h1{
+h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: white;
+    font-size: 1.7rem;
+    color: #DA0037;
     text-transform: uppercase;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #B1BED2;
 }
 P{
+    font-size: 1rem;
+    color: #B1BED2;
+    font-weight: 200;
+}
+.p-work{
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
     font-size: 1.2rem;
-    color: white;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: #B1BED2;
+}
+.Wokr-Summary{
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 200; 
 }
 .section{height: 100vh;}
 
@@ -174,25 +203,31 @@ P{
     display: flex;
 }
 
-/*-------------------------------work----------------------*/
+/*-------------------------------work-------------------------*/
 
 .work-colum1{
+    padding-top: 100px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.work-colum2{
+    padding-top: 100px;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 work-colum-placment{
-    top: 22%;
+
 }
+
 .my-work{
     float: left;
+    padding-bottom: 100px;
 }
 .my-work-right{
-    width: 60%;
-    background-color: blue;
+    width: 50%;
 }
 .my-work-left{
-    width: 40%;
-    background-color: crimson;
+    width: 50%;
 }
 .come-up{
     opacity: 0;
