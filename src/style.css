@@ -202,6 +202,24 @@ P{
 .colums{
     display: flex;
 }
+/*-------------------------------ANIMATION ABOUT ME TEXT BOX-------------------------*/
+
+.aboutMeTextBox{
+    margin-top: 100px;
+    border-style: dashed;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.aboutMeTextBox-content{
+    margin-top: 100px;
+}
+.aboutMeTextBox-content-box{
+    margin: 3rem 0 0 0;
+
+}
+
+
+
 
 /*-------------------------------work-------------------------*/
 
@@ -216,7 +234,6 @@ P{
     margin-right: 3rem;
 }
 work-colum-placment{
-
 }
 
 .my-work{

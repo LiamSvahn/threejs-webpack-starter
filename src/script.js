@@ -14,7 +14,6 @@ const slideninleft = document.querySelectorAll(".slide-in-left");
 
 const slideinright = document.querySelectorAll(".slide-in-right");
 
-const loadinanimation = document.querySelectorAll(".load-in-animation");
 
 
 
