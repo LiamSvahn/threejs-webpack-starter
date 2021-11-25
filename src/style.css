@@ -109,6 +109,10 @@ a{
     text-decoration: none;
     text-transform: uppercase;
 }
+a:hover{
+    color: rgb(0, 255, 115);
+    transition: 500ms ease-in-out;
+}
 .work-link{
 
 }
@@ -203,19 +207,84 @@ P{
     display: flex;
 }
 /*-------------------------------ANIMATION ABOUT ME TEXT BOX-------------------------*/
-
+.textbox{
+    width: 50%;
+}
+.my-experiance {
+    margin-left: 3rem;
+    width: 50%;
+}
 .aboutMeTextBox{
     margin-top: 100px;
-    border-style: dashed;
     margin-left: 3rem;
     margin-right: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.HTML-skills{
+    margin-top: 0.8rem;
+}
+.HTML-skills{
+    margin: 0.3rem 0 0 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: relative;
+}
+
+.HTML-skills span{
+display: block;
+background: blanchedalmond;
+transition: all 0.2s;
+overflow: hidden;
+}
+.HTML-skills span:nth-child(1),
+.HTML-skills span:nth-child(3){
+    position: absolute;
+    height: 2px;
+    width: 95%;
+}
+.HTML-skills span:nth-child(1){
+    left: -100%;
+}
+.HTML-skills span:nth-child(2){
+    top: 0;
+    left: -100%;
+}
+.HTML-skills span:nth-child(3){
+    bottom: 0;
+    left: -100%;
+}
+.HTML-skills:hover span:nth-child(3){
+    left: 0;
+}
+.HTML-skills span:nth-child(4){
+    top: 0;
+    left: -100%;
+}
+
+.previous-work{
+    margin: 2.0rem 0.5rem 0.5rem 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.previous-experience{
+    width: 45%;
 }
 .aboutMeTextBox-content{
-    margin-top: 100px;
+    margin: 3rem 0 0 0;
 }
 .aboutMeTextBox-content-box{
     margin: 3rem 0 0 0;
-
 }
 
 
