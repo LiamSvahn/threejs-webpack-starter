@@ -14,6 +14,12 @@ const slideninleft = document.querySelectorAll(".slide-in-left");
 
 const slideinright = document.querySelectorAll(".slide-in-right");
 
+const loadInSkillsHTML = document.querySelectorAll(".HTML-skills");
+const loadInSkillsCSS = document.querySelectorAll(".CSS-skills");
+const loadInSkillsWordpress = document.querySelectorAll(".Wordpress-skills");
+const loadInSkillsPHP = document.querySelectorAll(".PHP-skills");
+const loadInSkillsCsharp = document.querySelectorAll(".Csharp-skills");
+
 
 
 
@@ -277,6 +283,19 @@ slideinright.forEach(slideRight => {
     appearOnScroll.observe(slideRight);
 });
 
-loadinanimation.forEach(loadInAnimation => {
-    appearOnScroll.observe(loadInAnimation);
+
+loadInSkillsHTML.forEach(loadinskillsHTML => {
+    appearOnScroll.observe(loadinskillsHTML);
+});
+loadInSkillsCSS.forEach(loadinskillsCSS => {
+    appearOnScroll.observe(loadinskillsCSS);
+});
+loadInSkillsWordpress.forEach(loadinskillsWordpress => {
+    appearOnScroll.observe(loadinskillsWordpress);
+});
+loadInSkillsPHP.forEach(loadinskillsPHP => {
+    appearOnScroll.observe(loadinskillsPHP);
+});
+loadInSkillsCsharp.forEach(loadinskillsCsharp => {
+    appearOnScroll.observe(loadinskillsCsharp);
 });

@@ -231,19 +231,17 @@ P{
 }
 .HTML-skills{
     margin-top: 0.8rem;
-}
-.HTML-skills{
     margin: 0.3rem 0 0 0;
     border-bottom: 2px solid black;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .HTML-skills span{
 display: block;
 background: blanchedalmond;
 transition: all 0.2s;
-overflow: hidden;
 }
 .HTML-skills span:nth-child(1),
 .HTML-skills span:nth-child(3){
@@ -262,13 +260,118 @@ overflow: hidden;
     bottom: 0;
     left: -100%;
 }
-.HTML-skills:hover span:nth-child(3){
+.HTML-skills.appear span:nth-child(3){
     left: 0;
 }
 .HTML-skills span:nth-child(4){
     top: 0;
     left: -100%;
 }
+
+.CSS-skills{
+    margin-top: 0.8rem;
+    margin: 0.3rem 0 0 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.CSS-skills span{
+    display: block;
+    background: blanchedalmond;
+    transition: all 0.2s;
+}
+.CSS-skills span{
+    position: absolute;
+    height: 2px;
+    width: 95%;
+}
+.CSS-skills span{
+    bottom: 0;
+    left: -100%;
+}
+.CSS-skills.appear span{
+    left: 0;
+}
+
+.Wordpress-skills{
+    margin-top: 0.8rem;
+    margin: 0.3rem 0 0 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Wordpress-skills span{
+    display: block;
+    background: blanchedalmond;
+    transition: all 0.2s;
+}
+.Wordpress-skills span{
+    position: absolute;
+    height: 2px;
+    width: 95%;
+}
+.Wordpress-skills span{
+    bottom: 0;
+    left: -100%;
+}
+.Wordpress-skills.appear span{
+    left: 0;
+}
+
+.PHP-skills{
+    margin-top: 0.8rem;
+    margin: 0.3rem 0 0 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.PHP-skills span{
+    display: block;
+    background: blanchedalmond;
+    transition: all 0.2s;
+}
+.PHP-skills span{
+    position: absolute;
+    height: 2px;
+    width: 95%;
+}
+.PHP-skills span{
+    bottom: 0;
+    left: -100%;
+}
+.PHP-skills.appear span{
+    left: 0;
+}
+
+.Csharp-skills{
+    margin-top: 0.8rem;
+    margin: 0.3rem 0 0 0;
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Csharp-skills span{
+    display: block;
+    background: blanchedalmond;
+    transition: all 0.2s;
+}
+.Csharp-skills span{
+    position: absolute;
+    height: 2px;
+    width: 95%;
+}
+.Csharp-skills span{
+    bottom: 0;
+    left: -100%;
+}
+.Csharp-skills.appear span{
+    left: 0;
+}
+
 
 .previous-work{
     margin: 2.0rem 0.5rem 0.5rem 0.5rem;
