@@ -10,6 +10,11 @@
     background-color: rgb(255, 255, 255);
     border-radius: 100vw;
 }
+.aboutMeImg{
+    background-image: url('/static/Texture/aboutMe.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
 .grid-item1{
     background-image: url('/static/Texture/skog2.png');
     background-position: center;
@@ -56,7 +61,7 @@ body
 {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: #171717
+    background-color: #171717;
 }
 body{
     overflow-x: hidden;
@@ -182,20 +187,20 @@ h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #B1BED2;
+    color: #ffffff;
 }
 P{
     font-size: 1rem;
-    color: #B1BED2;
-    font-weight: 200;
+    color: #ffffff;
+    font-weight: 100;
 }
 .p-work{
     font-family: 'Source Code Pro', monospace;
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 100;
     margin-top: 0.5rem;
-    color: #B1BED2;
+    color: #ffffff;
 }
 .Wokr-Summary{
     margin: 1.5rem 0 1rem 0;
@@ -206,6 +211,162 @@ P{
 .colums{
     display: flex;
 }
+/*-------------------------------ABOUT ME TEXT BOX-------------------------*/
+.aboutMeImg{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    -webkit-transform: rotateY(45deg);
+    transform: rotateY(45deg);
+    overflow: visible;
+    
+}
+.text-box1{
+    position: relative;
+    width: 50%;
+}
+.text-box1 p{
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: 0.575;
+
+}
+.text-box2{
+    position: relative;
+    width: 50%;
+}
+.text-box2 p{
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: 0.575;
+
+}
+.cardhover{
+    background-color: crimson;
+    transition: 1s;
+}
+.card:hover{
+    background-color: rgb(0, 255, 115)
+}
+.card{
+    background-color: crimson;
+    transition: 1s;
+}
+.card:hover{
+    background-color: rgb(0, 255, 115)
+}
+.card h1{
+    font-size: 60px;
+    color: #212121;
+}
+.text-box1 .card{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+    transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(308deg) skew(178deg, 41deg) scale(0.6);
+    box-shadow: 25px 25px 10px rgb(0 0 0 / 20%);
+    z-index: calc(-1 * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box1 .card:nth-child(2) {
+    opacity: 0.8;
+}
+  
+.text-box1 .card:nth-child(3) {
+    opacity: 0.6;
+}
+.card h1{
+    font-size: 60px;
+    color: #212121;
+    text-align: center;
+}
+.text-box2 .card{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 450px;
+    height: 600px;
+    transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(30deg) skew(163deg, 161deg) scale(0.7);
+    box-shadow: 25px 25px 10px rgb(0 0 0 / 20%);
+    z-index: calc(-1 * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box2 .card:nth-child(2) {
+    opacity: 0.8;
+}
+  
+.text-box2 .card:nth-child(3) {
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-box2{
+    width: 50%;
+}
+.text-box2 p{
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: 0.575;
+
+}
+.aboutMeBoxflex1{
+    height: 100%;
+    align-items: center;
+    -webkit-perspective: 500px;
+    perspective: 800px;
+    margin-top: 100px;
+    margin-left: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.aboutMeBoxflex2{
+    height: 100%;
+    align-items: baseline;
+    -webkit-perspective: 500px;
+    perspective: 800px;
+    margin-top: 100px;
+    margin-left: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*-------------------------------ABOUT ME TEXT BOX-------------------------*/
 /*-------------------------------ANIMATION ABOUT ME TEXT BOX-------------------------*/
 .textbox{
     width: 50%;
@@ -215,7 +376,6 @@ P{
     width: 50%;
 }
 .aboutMeTextBox{
-    margin-top: 100px;
     margin-left: 3rem;
     margin-right: 3rem;
     overflow: hidden;
@@ -396,7 +556,7 @@ transition: all 0.2s;
 /*-------------------------------work-------------------------*/
 
 .work-colum1{
-    padding-top: 100px;
+    padding-bottom: 100px;
     margin-left: 3rem;
     margin-right: 3rem;
 }
